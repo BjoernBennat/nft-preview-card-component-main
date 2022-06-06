@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+body {
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    background: hsl(217, 54%, 11%);
+    box-sizing: border-box;
+}
+
+.card {
+    background: hsl(216, 50%, 16%);
+    width: 330px;
+    height: 550px;
+    margin: 80px auto;
+    border-radius: 20px;
+    box-shadow: 0px 21px 15px 7px rgba(0,0,0,0.3);
+}
+
+.inner-card {
+    width: 300px;
+    text-align: center;
+    padding-top: 25px;
+    margin: 0 auto;
+}
+
+.content {
+    display: inline-flex;
+    margin: 20px 0 10px 0;
+}
+
+.creator {
+    align-items: center;
+    width: 90%;
+    margin-top: 15px;
+}
+
+.container {
+    display: inline-block;
+    width: 270px;
+    height: 270px;
+    background-color: blueviolet;
+    border-radius: 10px;
+}
+
+.overlay {
+    position: relative;
+    top: -275px;
+    border-radius: 10px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 270px;
+    width: 270px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+
+.container:hover .overlay {
+    opacity: .95;
+}
+
+.view-icon {
+    color: white;
+    width: 50px;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+img {
+    width: 270px;
+    border-radius: 10px;
+}
+
+img.creator-img {
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid yellow;
+    margin-right: 20px;
+}
+
+img.eth-img {
+    width: 12px;
+    object-fit: contain;
+    margin-right: 5px;
+}
+
+img.clock-img {
+    width: 17px;
+    object-fit: contain;
+    margin-right: 5px;
+}
+
+h1 {
+    font-size: 1.4rem;
+    text-align: left;
+    margin-top: 20px;
+}
+
+h1, a {
+    color: hsl(0, 0%, 100%);
+}
+
+h1, h1 + p {
+    padding: 0 16px;
+}
+
+span {
+    font-size: 16px;
+}
+
+p {
+    color: hsl(215, 51%, 70%);
+    font-size: 16px;
+    text-align: left;
+    display: inline-block;
+    margin: 0;
+}
+
+p.eth-text {
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+    padding-right: 80px;
+}
+
+hr {
+    margin-top: 10px;
+    border: none;
+    background-color: #fff;
+    height: 1px;
+    width: 90%;
+    opacity: .2;
+}
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
